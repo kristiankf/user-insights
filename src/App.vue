@@ -2,8 +2,10 @@
 </script>
 
 <template>
-  <router-view>
-  </router-view>
+  <div class="">
+    <router-view>
+    </router-view>
+  </div>
 </template>
 
 <style scoped></style>
