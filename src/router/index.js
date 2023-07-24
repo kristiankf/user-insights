@@ -7,19 +7,36 @@ const routes = [
     name: "ParticipantHome",
     component: ParticipantHome,
   },
-  //   {
-  //     path: "/app",
-  //     name: "App",
-  //     component: () =>
-  //       import(
-  //         /* webpackChunkName: "group-user" */ "../components/HelloWorld.vue"
-  //       ),
-  //   },
+  {
+    path: "/researcher",
+    name: "ResearcherHome",
+    component: () =>
+      import(
+        /* webpackChunkName: "researcher" */ "../views/ResearcherHome.vue"
+      ),
+  },
+  {
+    path: "/researcher/sign-up",
+    name: "ResearcherSignup",
+    component: () =>
+      import(
+        /* webpackChunkName: "researchersign" */ "../views/ResearcherSignup.vue"
+      ),
+  },
+  {
+    path: "/participant/sign-up",
+    name: "ParticipantSignup",
+    component: () =>
+      import(
+        /* webpackChunkName: "Participantsign" */ "../views/ParticipantSignup.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  linkActiveClass: "active-link",
 });
 
 export default router;
