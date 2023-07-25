@@ -2,8 +2,11 @@
 </script>
 
 <template>
-  <div class="font-body">
-    <router-view>
+  <div class="font-body bg-the-bg">
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
     </router-view>
   </div>
 </template>
@@ -28,5 +31,19 @@
 @font-face {
   font-family: Inter;
   src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+/* page transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

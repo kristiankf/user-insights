@@ -3,17 +3,20 @@
 <template>
     <div class=" bg-the-bg min-h-screen">
         <div class="maximum">
-            <div>
+            <div class="py-3">
                 <img src="../assets/images/logo.png" alt="logo">
             </div>
 
-            <div class="my-16 w-[600px] mx-auto text-center">
-                <h2 class="font-heading-normal text-5xl">Researcher sign up</h2>
-                <p class="text-lg my-5">
+            <div class="py-16 max-w-[600px] mx-auto sm:text-center">
+                <h2 class="font-heading-normal text-4xl md:text-5xl ml-5 sm:ml-0"><span
+                        class="excite relative">Researcher</span>
+                    sign up
+                </h2>
+                <p class="xl:text-lg my-5">
                     Discovering the perfect participants is made easy, ensuring top-notch responses of superior quality, all
                     while propelling research that can change the world
                 </p>
-                <form class="text-left w-[450px] mx-auto">
+                <form class="text-left max-w-[450px] mx-auto">
                     <div class="mb-5">
                         <label for="firstname" class="block">First name</label>
                         <input type="text" name="firstname" id="firstname"
@@ -34,3 +37,12 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+.excite::before {
+    content: url("../assets/icons/excite-icon.png");
+    position: absolute;
+    bottom: 35%;
+    right: 92%;
+}
+</style>

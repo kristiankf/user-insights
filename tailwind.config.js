@@ -17,6 +17,9 @@ export default {
         "heading-light": ["Butler Light"],
         "heading-normal": ["Butler Normal"],
       },
+      screens: {
+        xs: "500px",
+      },
     },
   },
   plugins: [],

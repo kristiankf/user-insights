@@ -2,12 +2,12 @@
 
 <template>
     <div class="flex gap-3 items-center">
-        <div>
+        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
             <div class="img-container blue relative bottom-12 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
         </div>
-        <div>
+        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
             <div class="img-container red relative mb-3 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
@@ -15,7 +15,7 @@
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
         </div>
-        <div>
+        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
             <div class="img-container purple relative top-20 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
@@ -26,7 +26,7 @@
 <style scoped>
 .img-container {
     border-radius: 20px;
-    width: 150px;
+    width: 100%;
     aspect-ratio: 5.5/11;
 }
 
@@ -48,5 +48,11 @@
 .purple {
     background: url(../assets/images/purple.png) no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width: 1280px) {
+    .img-container {
+        /* width: 120px */
+    }
 }
 </style>

@@ -2,7 +2,7 @@
 
 <template>
     <div class="pt-16 pb-8 bg-white text-primary">
-        <div class="maximum flex justify-between items-end">
+        <div class="maximum flex justify-between gap-10 md:items-end flex-col md:flex-row">
             <div>
                 <img class="w-12" src="../assets/images/logo.png" alt="logo">
                 <p class=" text-2xl font-bold mt-2">UsersInsight</p>
@@ -18,6 +18,6 @@
                 </div>
             </div>
         </div>
-        <p class="text-center mt-2">2023 UsersInsight. All rights reserved</p>
+        <p class="text-center mt-10 md:mt-2">2023 UsersInsight. All rights reserved</p>
     </div>
 </template>
