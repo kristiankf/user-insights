@@ -4,6 +4,6 @@
 
 @layer components {
     .maximum {
-        @apply mx-auto max-w-[1440px] px-5
+        @apply mx-auto max-w-[1280px] px-5
     }
 }

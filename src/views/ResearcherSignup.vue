@@ -1,15 +1,16 @@
 <script setup></script>
 
 <template>
-    <div class=" bg-the-bg min-h-screen">
+    <div class="back min-h-screen">
         <div class="maximum">
             <div class="py-3">
-                <img src="../assets/images/logo.png" alt="logo">
+                <router-link :to="{ name: 'ResearcherHome' }"><img src="../assets/images/logo.svg" alt="logo"></router-link>
             </div>
 
             <div class="py-16 max-w-[600px] mx-auto sm:text-center">
-                <h2 class="font-heading-normal text-4xl md:text-5xl ml-5 sm:ml-0"><span
-                        class="excite relative">Researcher</span>
+                <h2 class="font-heading-normal text-4xl md:text-5xl ml-5 sm:ml-0"><span class="excite relative">Researcher
+                        <img src="../assets/icons/excite-icon.svg" class="absolute bottom-[50%] right-[92%]  w-9 md:w-auto">
+                    </span>
                     sign up
                 </h2>
                 <p class="xl:text-lg my-5">
@@ -38,11 +39,4 @@
     </div>
 </template>
 
-<style scoped>
-.excite::before {
-    content: url("../assets/icons/excite-icon.png");
-    position: absolute;
-    bottom: 35%;
-    right: 92%;
-}
-</style>
+<style scoped></style>

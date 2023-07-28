@@ -2,9 +2,9 @@
 
 <template>
     <div class="relative z-40 ml-auto top-5 max-w-xs">
-        <div class="absolute bg-white py-20 px-10 right-0 left-0">
+        <div class="nav absolute py-20 px-10 right-0 left-0">
             <router-link :to="{ name: 'ParticipantHome' }"
-                class="px-4 py-2 inline-block border-2 border-black mr-3 w-full text-center mb-2 link">Join as
+                class="px-4 py-2 inline-block border-2 border-black mr-3 w-full text-center mb-3 link">Join as
                 a
                 Participant</router-link>
             <router-link :to="{ name: 'ResearcherHome' }"
@@ -12,7 +12,7 @@
                 as a
                 Researcher</router-link>
         </div>
-        <img src="../assets/icons/close-square.png" alt="" class="absolute right-4 top-4" @click="$emit('close')">
+        <img src="../assets/icons/close-square.svg" alt="" class="absolute right-4 top-4" @click="$emit('close')">
     </div>
 </template>
 
@@ -25,5 +25,9 @@ link.active-link {
 .router-link-exact-active {
     background-color: black !important;
     color: white;
+}
+
+.nav {
+    background: rgba(255, 255, 255) url("./assets/images/grain.png") repeat;
 }
 </style>

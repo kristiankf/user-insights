@@ -24,7 +24,7 @@ onUnmounted(() => {
 
     <div class="flex justify-between items-center py-3 ">
         <div>
-            <img src="../assets/images/logo.png" alt="logo">
+            <img src="../assets/images/logo.svg" alt="logo">
         </div>
         <div class="hidden md:block">
             <router-link :to="{ name: 'ParticipantHome' }" class="px-4 py-2 inline-block border-2 border-black mr-3">Join as
@@ -35,7 +35,7 @@ onUnmounted(() => {
                 Researcher</router-link>
         </div>
         <div class="md:hidden">
-            <img class="w-10 cursor-pointer" src="../assets/icons/hamburger.png" alt="" @click="toggleMobileNav">
+            <img class="w-10 cursor-pointer" src="../assets/icons/hamburger.svg" alt="" @click="toggleMobileNav">
         </div>
     </div>
 </template>

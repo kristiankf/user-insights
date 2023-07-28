@@ -6,16 +6,20 @@ import TheFooter from '../components/TheFooter.vue';
 
 <template>
     <div class="">
-        <div class="bg-the-bg pb-20 md:pb-40">
+        <div class="back pb-20 md:pb-40">
             <div class="maximum">
                 <TheNavigation />
             </div>
 
             <div
-                class="flex justify-center mt-14 md:mt-10 items-center  gap-20 md:gap-10 flex-col md:flex-row maximum md:pl-10 xl:pl-5">
-                <div class="md:w-[600px]">
-                    <h1 class="font-heading text-4xl md:text-5xl xl:text-6xl font-bold text-primary ml-5 md:ml-0"><span
-                            class="inline-block relative excite">Share</span>
+                class="flex justify-between mt-14 md:mt-10 items-center  gap-20 md:gap-10 flex-col md:flex-row maximum md:pl-10 xl:pl-5 max-w-7xl">
+                <div class="md:w-[48%] w-full relative lg:bottom-24">
+                    <h1 class="font-heading text-4xl lg:text-5xl xl:text-6xl font-bold text-primary ml-5 md:ml-0"><span
+                            class="inline-block relative excite">Share
+                            <img src="../assets/icons/excite-icon.svg"
+                                class="absolute bottom-[60%] right-[85%] w-9 lg:w-auto">
+
+                        </span>
                         your
                         <span class="text-secondary">Opinion,</span><br>&
                         Get paid.
@@ -25,14 +29,13 @@ import TheFooter from '../components/TheFooter.vue';
                         your home is a breeze with our simple, speedy, and effortless platform.
                     </p>
                     <router-link :to="{ name: 'ParticipantSignup' }"
-                        class="bg-secondary  px-8 py-2 inline-block border-2 border-secondary mr-3 font-semibold relative arrow">Join
+                        class="bg-secondary  px-8 py-2 inline-block border-2 border-secondary mr-3 relative arrow">Join
                         the
                         Waitlist
-
-                    </router-link>
+                        <img src="../assets/icons/arrow-curved.svg" class="absolute top-[50%] left-[65%]"> </router-link>
 
                 </div>
-                <div>
+                <div class="md:w-[48%] w-full">
                     <ImageGallery />
                 </div>
             </div>
@@ -44,20 +47,4 @@ import TheFooter from '../components/TheFooter.vue';
     </div>
 </template>
 
-<style scoped>
-.excite::before {
-    content: url("../assets/icons/excite-icon.png");
-    position: absolute;
-    bottom: 45%;
-    right: 85%;
-}
-
-.arrow::after {
-    content: url("../assets/icons/arrow-curved.png");
-    position: absolute;
-    top: 50%;
-    left: 65%;
-}
-
-@media screen and (max-width: 768px) {}
-</style>
+<style scoped></style>

@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "the-bg":
-          "linear-gradient(180deg, rgb(200, 184, 158), rgb(246, 246, 246))",
+          "linear-gradient(rgba(255, 136, 0, 0.39), rgba(255, 255, 255, 0.5))",
       },
       colors: {
         primary: "#0B2E66",

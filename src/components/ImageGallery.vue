@@ -1,13 +1,13 @@
 <script setup></script>
 
 <template>
-    <div class="flex gap-3 items-center">
-        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
+    <div class="flex gap-3 items-center w-full">
+        <div class="w-[32%]  flex-shrink">
             <div class="img-container blue relative bottom-12 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
         </div>
-        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
+        <div class="w-[32%]  flex-shrink">
             <div class="img-container red relative mb-3 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
@@ -15,8 +15,8 @@
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
         </div>
-        <div class="w-[100px] xs:w-[120px] xl:w-[150px] flex-shrink">
-            <div class="img-container purple relative top-20 overflow-hidden">
+        <div class="w-[32%]  flex-shrink">
+            <div class="img-container purple relative top-14 xs:top-16 md:top-20 overflow-hidden">
                 <div class="absolute top-0 bottom-0 left-0 right-0"></div>
             </div>
         </div>
